@@ -1,0 +1,14 @@
+# Number of students enrolled in the training
+students = 100
+
+# Number of trainers conducting the training
+trainers = 2
+
+"""
+Calculate the total number of people involved
+in the training: students + trainers.
+"""
+total = students + trainers
+
+# Display the total count
+print(total)
