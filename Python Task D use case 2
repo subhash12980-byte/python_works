@@ -1,0 +1,25 @@
+fee = 45000
+
+# Dynamic inference
+print("Initial fee:", fee)
+print("Type of fee:", type(fee))
+
+# Applying 18% GST
+gst = fee * 0.18
+total_fee = fee + gst
+
+print("GST (18%):", gst)
+print("Total fee:", total_fee)
+
+# Dynamic typing
+fee = "45000"
+
+print("New value of fee:", fee)
+print("New type of fee:", type(fee))
+
+# Strong typing
+eighteen_percent_gst = "18%"
+
+# This will cause TypeError because Python
+# does not automatically convert strings to numbers
+# print(fee * eighteen_percent_gst)
