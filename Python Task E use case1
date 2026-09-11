@@ -1,0 +1,6 @@
+No.	Variable Name	Valid / Invalid	Simple Reason
+1	2student	❌ Invalid	Variable name should not start with a number.
+2	_student_id	✅ Valid	Variable name can start with _.
+3	studentName	✅ Valid	Letters can be used in a variable name.
+4	class name	❌ Invalid	We cannot use spaces in a variable name.
+5	inceptez_batch	✅ Valid	Letters and _ can be used.
