@@ -1,0 +1,12 @@
+# Single quotes
+str1 = 'This is Inceptez\'s "Python" class for Data Engineers & AI Engineers'
+
+# Double quotes
+str2 = "This is Inceptez's \"Python\" class for Data Engineers & AI Engineers"
+
+# Triple quotes
+str3 = '''This is Inceptez's "Python" class for Data Engineers & AI Engineers'''
+
+print(str1)
+print(str2)
+print(str3)
