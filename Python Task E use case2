@@ -1,0 +1,12 @@
+# PascalCase
+DataEngineeringBatch = "Morning Batch"
+
+# camelCase
+dataEngineeringBatch = "Morning Batch"
+
+# snake_case
+data_engineering_batch = "Morning Batch"
+
+print(DataEngineeringBatch)
+print(dataEngineeringBatch)
+print(data_engineering_batch)
