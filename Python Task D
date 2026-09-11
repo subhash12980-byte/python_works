@@ -1,0 +1,5 @@
+stdname = 'Subhash'
+Course_Name = "Python Fundamentals"
+Trg_Inst_Name = '''Inceptez Technologies'''
+
+print(stdname, 'is learning the course', Course_Name, 'at the', Trg_Inst_Name)
