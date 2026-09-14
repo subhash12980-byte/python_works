@@ -1,0 +1,23 @@
+# Ask for employee age
+age = input("Enter your age: ")
+
+# Check if input is a string
+if isinstance(age, str):
+    print("Input type is string.")
+
+# Convert string to integer
+age = int(age)
+
+# Retirement age
+retirement_age = 60
+
+# Calculate years left for retirement
+years_left = retirement_age - age
+
+# Display result
+if years_left > 0:
+    print(f"You will retire in {years_left} years at Inceptez Technologies.")
+elif years_left == 0:
+    print("Congratulations! You are retiring this year.")
+else:
+    print(f"You retired {-years_left} years ago.")
