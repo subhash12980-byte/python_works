@@ -1,0 +1,21 @@
+# Get employee details from user
+
+employee_name = input("Enter employee name: ")
+base_salary = float(input("Enter base salary: "))
+hra_percent = int(input("Enter HRA percentage: "))
+bonus_amount = float(input("Enter bonus amount: "))
+
+# Calculate HRA
+hra = base_salary * (hra_percent / 100)
+
+# Calculate Total Salary
+total_salary = base_salary + hra + bonus_amount
+
+# Display Salary Breakdown
+print("\nEmployee Salary Breakdown")
+print("-------------------------")
+print("Employee:", employee_name)
+print("Base Salary:", base_salary)
+print(f"HRA @ {hra_percent}%:", hra)
+print("Bonus:", bonus_amount)
+print(f"Total Salary Payable: ₹{total_salary}")
