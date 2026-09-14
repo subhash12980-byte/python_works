@@ -21,3 +21,10 @@ elif years_left == 0:
     print("Congratulations! You are retiring this year.")
 else:
     print(f"You retired {-years_left} years ago.")
+
+Use case 2 : 
+
+salary = '50000'
+salary = int(salary)
+bonus = 10000
+print('Total Salary in Inceptez:', salary + bonus)
