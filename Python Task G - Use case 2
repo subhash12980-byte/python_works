@@ -1,0 +1,16 @@
+# Get student marks
+
+std_marks_flt = input("Enter student marks: ")
+std_marks_flt = float(std_marks)
+
+if std_marks_flt >= 90 :
+ print ("Outstanding")
+elif std_marks_flt >= 75 :
+ print("Excellent")
+elif std_marks_flt >= 50 :
+ print("Pass")
+else:
+ print("Fail")
+if isinstance(std_marks_flt, str):
+ print("Invalid marks entered Please provide numeric input")
+
