@@ -1,0 +1,15 @@
+item_name = input("Enter product name: ")
+2
+price = float(input("Enter price per item: "))
+3
+quantity = int(input("Enter quantity: "))
+4
+ 
+5
+total_cost = price * quantity
+6
+ 
+7
+print("You purchased", quantity, "units of", item_name)
+8
+print("Total payable:", total_cost)
