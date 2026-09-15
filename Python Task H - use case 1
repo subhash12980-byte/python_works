@@ -1,0 +1,14 @@
+mth_d_l = int(input("Total monthly data limit (in GB): "))
+d_use_far = float(input("Data used so far (in GB): "))
+rem_data = mth_d_l - d_use_far
+usage_percentage = (d_use_far / mth_d_l) * 100
+
+print("Remaining data:", rem_data, "GB")
+print("Usage percentage:", usage_percentage, "%")
+
+if usage_percentage >= 80:
+ print("Warning: High usage, consider upgrading your plan.")
+elif usage_percentage >= 50:
+ print("Usage is moderate.")
+else:
+ print("Usage is within normal limits.")
