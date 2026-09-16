@@ -1,0 +1,14 @@
+# Get user inputs
+room_available = input("Is room available? (yes/no): ")
+guest_type = input("Enter guest type (vip/nonvip): ")
+member_years = int(input("Enter membership years: "))
+
+if room_available == "yes":
+    if guest_type == "vip":
+        print("Offer complimentary upgrade.")
+    elif member_years >= 5:
+        print("Offer discount.")
+    else:
+        print("Standard price.")
+else:
+    print("No rooms available.")
