@@ -1,0 +1,9 @@
+# Get number from user
+numtable = int(input("Enter a number: "))
+
+# Print table from 1 to 10
+for i in range(1, 11):
+    print(f"{numtable} x {i} = {numtable * i}")
+
+    ---------------------------------------------------------------
+    
