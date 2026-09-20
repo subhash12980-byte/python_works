@@ -1,0 +1,13 @@
+num_odd_even = int(input("Enter a number: "))
+
+odd_tot = 0
+even_tot = 0
+
+for i in range(1, num_odd_even + 1):
+    if i % 2 == 0:
+        even_tot += i
+    else:
+        odd_tot += i
+
+print(f"Sum of odd numbers: {odd_tot}")
+print(f"Sum of even numbers: {even_tot}")
