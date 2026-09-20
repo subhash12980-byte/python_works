@@ -1,0 +1,20 @@
+# Dictionary of products and prices
+products = {
+    "soap": 50,
+    "oil": 100,
+    "powder": 200,
+    "tea": 250,
+    "coffee": 400
+}
+
+# Get product name from user
+product_name = input("Enter a product name: ").lower()
+
+# Look up the price
+price = products.get(product_name)
+
+# Check if product exists
+if price is not None:
+    print(f"Price of {product_name} is {price}")
+else:
+    print("Product not available.")
