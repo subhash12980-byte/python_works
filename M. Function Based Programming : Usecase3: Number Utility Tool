@@ -1,0 +1,34 @@
+# Function to check whether a number is even or odd
+def is_even(num):
+    return num % 2 == 0
+
+
+# Function to find the maximum number from multiple arguments
+def find_max(*numbers):
+    return max(numbers)
+
+
+# Function to perform operations
+def perform_operation(num, operation):
+    if operation.lower() == "square":
+        return num * num
+    elif operation.lower() == "cube":
+        return num * num * num
+    else:
+        return "Invalid operation"
+
+
+# Testing the functions
+number = int(input("Enter a number: "))
+
+print("Is Even:", is_even(number))
+
+
+# Get multiple numbers from user
+max_numbers = tuple(map(int, input("Enter numbers separated by space: ").split()))
+
+print("Maximum Number:", find_max(*max_numbers))
+
+
+operation = input("Enter operation (square/cube): ")
+print("Result:", perform_operation(number, operation))
