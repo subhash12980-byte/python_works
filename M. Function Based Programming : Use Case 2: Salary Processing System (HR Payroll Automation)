@@ -1,0 +1,44 @@
+def calculate_bonus(basic_salary, bonus_percent=10):
+    return basic_salary * bonus_percent / 100
+
+
+def calculate_incentives(*incentives):
+    return sum(incentives)
+
+
+def calculate_tax(gross_salary, tax_percent=5):
+    return gross_salary * tax_percent / 100
+
+
+def calculate_net_salary(basic_salary, bonus_percent=10,
+                         pf=2000, tax_percent=5, *incentives):
+
+    bonus = calculate_bonus(basic_salary, bonus_percent)
+    incentive_amount = calculate_incentives(*incentives)
+
+    gross_salary = basic_salary + bonus + incentive_amount
+    tax = calculate_tax(gross_salary, tax_percent)
+
+    return gross_salary - pf - tax
+
+
+try:
+    basic_salary = float(input("Enter Basic Salary: "))
+    bonus_percent = float(input("Enter Bonus Percentage: "))
+
+    incentive1 = float(input("Enter Incentive 1: "))
+    incentive2 = float(input("Enter Incentive 2: "))
+
+    net_salary = calculate_net_salary(
+        basic_salary,
+        bonus_percent,
+        2000,
+        5,
+        incentive1,
+        incentive2
+    )
+
+    print("Net Salary:", net_salary)
+
+except ValueError:
+    print("Invalid input. Please enter numeric values only.")
