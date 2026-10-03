@@ -1,0 +1,29 @@
+
+
+
+
+def calculate_discount(amount):
+    if amount >= 1000:
+        discount = amount * 0.20
+    elif amount >= 500:
+        discount = amount * 0.10
+    else:
+        discount = 0
+
+    final_amount = amount - discount
+
+    print("Discount:", discount)
+    print("Final Amount:", final_amount)
+
+
+try:
+    order_amount = float(input("Enter food order amount: "))
+
+    if order_amount < 0:
+        raise ValueError
+
+    calculate_discount(order_amount)
+
+except ValueError:
+    print("Invalid input. Please enter a valid positive amount.")
+   
