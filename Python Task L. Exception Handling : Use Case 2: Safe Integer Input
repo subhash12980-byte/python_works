@@ -1,0 +1,14 @@
+try:
+    num = int(input("Enter a number: "))
+    print("You entered:", num)
+
+except ValueError:
+    print("Invalid input. Please enter a numeric value.")
+	
+	or below code can be used
+	
+	try :
+   num1 = int(input("Enter a number: "))
+   
+except Exception as errmsg:
+   print("Invalid input. Please enter a numeric value.",errmsg)
