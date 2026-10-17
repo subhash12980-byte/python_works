@@ -1,0 +1,49 @@
+# pkg/subpkg/module.py
+
+def calculate_discount(amount):
+    """
+    Calculate discount for food delivery order
+    """
+
+    try:
+        amount = float(amount)
+
+        if amount < 0:
+            raise ValueError("Amount cannot be negative")
+
+        if amount >= 1000:
+            discount = amount * 0.20
+        elif amount >= 500:
+            discount = amount * 0.10
+        else:
+            discount = 0
+
+        final_amount = amount - discount
+
+        return discount, final_amount
+
+    except ValueError as err:
+        print("Error :", err)
+        return None, None
+
+    except Exception as err:
+        print("Unexpected Error :", err)
+        return None, None
+		
+#inside pkg	
+
+# pkg/__init__.py
+
+inside subpkg/module
+
+# pkg/subpkg/__init__.py
+
+from pkg.subpkg.module import calculate_discount
+
+amount = input("Enter Order Amount : ")
+
+discount, final_amount = calculate_discount(amount)
+
+if discount is not None:
+    print("Discount Applied :", discount)
+    print("Final Amount :", final_amount)	
