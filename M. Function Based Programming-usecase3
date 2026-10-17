@@ -1,0 +1,47 @@
+# Function to check whether a number is even or odd
+def is_even(num):
+    return num % 2 == 0
+
+
+# Function to find maximum number from multiple arguments
+def find_max(*numbers):
+    return max(numbers)
+
+
+# Function to perform mathematical operations
+def perform_operation(num, operation):
+
+    if operation.lower() == "square":
+        return num * num
+
+    elif operation.lower() == "cube":
+        return num * num * num
+
+    else:
+        return "Invalid operation"
+
+
+# Test Data
+numbers = [5, 10, 15, 20, 25]
+
+print("Testing is_even() Function")
+for n in numbers:
+    print(f"{n} -> {is_even(n)}")
+
+print("\nMaximum Number")
+print(find_max(*numbers))
+
+print("\nTesting perform_operation() Function")
+
+for n in numbers:
+    print(f"Square of {n} = {perform_operation(n, 'square')}")
+
+print()
+
+for n in numbers:
+    print(f"Cube of {n} = {perform_operation(n, 'cube')}")
+
+print()
+
+print("Invalid Operation Test:")
+print(perform_operation(10, "multiply"))
